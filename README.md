@@ -1,27 +1,31 @@
-Keylogger Project
-This project is a simple keylogger designed for educational purposes. It demonstrates how keylogging can work in Python using the pynput library. It includes two main files:
+# Keylogger Project
 
-target.py: The keylogger client that captures keystrokes.
-listener.py: The server that listens for and logs keystrokes sent from the client.
-keylog.txt: The file where logged keystrokes are stored.
-Requirements
-To run this project, you need to have Python installed on both the server and the client machine. You can download Python from here.
+This project is a simple keylogger designed for educational purposes. It demonstrates how keylogging can work in Python using the `pynput` library. It includes two main files:
+
+- **`target.py`**: The keylogger client that captures keystrokes.
+- **`listener.py`**: The server that listens for and logs keystrokes sent from the client.
+- **`keylog.txt`**: The file where logged keystrokes are stored.
+
+## Requirements
+
+To run this project, you need to have Python installed on both the server and the client machine. You can download Python from [here](https://www.python.org/downloads/).
 
 Additionally, the project requires the following Python package:
 
-pynput (for capturing keystrokes)
+- `pynput` (for capturing keystrokes)
+
 You can install the required package by running:
 
-bash
-Copy
-Edit
-pip install pynput
-File Overview
-target.py (Client)
+```bash
+
+
+# File Overview
+
+-**target.py (Client)
 
 Captures keystrokes from the keyboard.
 Sends the captured keystrokes to the server (listener.py).
-listener.py (Server)
+-**listener.py (Server)
 
 Listens for incoming connections from the client.
 Logs the keystrokes received in keylog.txt.
@@ -34,7 +38,7 @@ Ensure that the listener.py file is on the machine you want to use as the server
 
 Modify the HOST and PORT variables in listener.py to suit your testing or deployment configuration (default: HOST = "0.0.0.0" and PORT = 8080).
 
-Note: For testing both scripts on a single device, the HOST value has been changed to "127.0.0.1" (localhost), allowing the client and server to communicate on the same device without needing an external network.
+Note: For testing both scripts on the same device, the HOST value has been changed to "127.0.0.1" (localhost), allowing the client and server to communicate on the same device without needing an external network.
 
 Run the server script:
 
@@ -84,5 +88,6 @@ Ethical Use Only: This project is intended for educational purposes only. Do not
 
 Firewall and Port Configuration: The server listens on a specified port. If you're deploying this in a real-world scenario, ensure that firewalls and routers are properly configured to allow traffic on the desired port. Common ports like 80 or 443 are often unblocked for communication.
 
-Disclaimer
+#Disclaimer
+
 This project is for educational purposes only. Any use of this code outside of a controlled environment where explicit consent is obtained may violate privacy and legal guidelines. Always respect the privacy of others and comply with local laws regarding computer usage.
